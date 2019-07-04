@@ -1,0 +1,37 @@
+title: Qndev's blog
+author: NGUYEN DINH QUANG
+email: quangnd.hust@gmail.com
+url: "https://qndev.github.io"
+baseurl: "/blog"
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Disqus Comments
+disqus:
+  shortname: https-qndev-github-io
+
+google_analytics: # UA-NNNNNNNN-N
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  hard_wrap: false
+  footnote_nr: 1
+  show_warnings: false
+
+social_links:
+  github: qndev
+  twitter: AmaryllisApril
+
+plugins:
+  - jekyll-octicons
+  - jekyll-paginate
+  - jekyll-paginate
+  - jemoji

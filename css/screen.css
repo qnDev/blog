@@ -35,7 +35,7 @@ p {
 }
 
 a {
-  color: #00a;
+  color: #0066ff;
 }
 
 a:hover {
@@ -43,7 +43,7 @@ a:hover {
 }
 
 a:visited {
-  color: #a0a;
+  color: #a00;;
 }
 
 table {
@@ -90,11 +90,14 @@ ul.posts {
   color: #a00;
   font-weight: bold;
   margin-bottom: 2em;
+  background-color: #a00;
+  padding:2px;
 }
 
   .site .title a {
-    color: #a00;
+    color: #ffffff;
     text-decoration: none;
+    /*margin-left: 0.15em;*/
   }
 
   .site .title a:hover {
@@ -102,7 +105,7 @@ ul.posts {
   }
 
   .site .title a.extra {
-    color: #aaa;
+    color: #ffffff;
     text-decoration: none;
     margin-left: 1em;
   }
@@ -118,7 +121,7 @@ ul.posts {
   .site .footer {
     font-size: 80%;
     color: #666;
-    border-top: 4px solid #eee;
+    border-top: 2px solid #a00;
     margin-top: 2em;
     overflow: hidden;
   }
@@ -134,7 +137,7 @@ ul.posts {
 
     .site .footer .rss {
       margin-top: 1.1em;
-      margin-right: -.2em;
+      /*margin-right: -.2em;*/
       float: right;
     }
 
@@ -200,3 +203,16 @@ ul.posts {
   #related h2 {
     margin-bottom: 1em;
   }
+
+.blog-post-title {
+  float: left;
+  margin-right: -.2em;
+}
+
+.pagination-title {
+  float: right;
+}
+
+.logo {
+    vertical-align:middle;
+}
