@@ -5,34 +5,9 @@ title: Qndev's blog
 
 <div id="home">
   <div class="pagination">
-    <div class="blog-post-title"><h1>Blog Posts</h1></div>
-    <div class="pagination-title">
-      {% if paginator.total_pages > 1 %}
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-        {% else %}
-          <span class="previous_page disabled">&laquo; Prev</span>
-        {% endif %}
-
-        {% for page in (1..paginator.total_pages) %}
-          {% if page == paginator.page %}
-            <em class="current selected" aria-current="true">{{ page }}</em>
-          {% elsif page == 1 %}
-            <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
-          {% else %}
-            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-          {% endif %}
-        {% endfor %}
-
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-        {% else %}
-          <span class="next_page disabled">Next &raquo;</span>
-        {% endif %}
-      {% endif %}
-    </div>
+  <div class="blog-post-title"><h1>Blog Posts</h1></div>
+    {% include pagination.html %}
   </div>
-
   <div style="clear: both">
     <ul class="posts">
       {% for post in paginator.posts %}
