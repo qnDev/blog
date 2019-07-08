@@ -218,5 +218,36 @@ ul.posts {
 }
 
 .logo {
-    vertical-align:middle;
+  border:1px white solid;
+  vertical-align:middle;
+  width: 32px;
+  height: 32px;
+}
+
+.prev-next a {
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.prev-next .next {
+  text-align: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.container {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+  color: #a00;
+  font-weight: bold;
+}
+.container h1 {
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
 }

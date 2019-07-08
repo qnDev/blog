@@ -7,7 +7,7 @@ layout: default
   <div class="blog-post-title"><h1>Blog Posts</h1></div>
     {% include pagination.html %}
   </div>
-  <div style="clear: both">
+  <div class="clearfix">
     <ul class="posts">
       {% for post in paginator.posts %}
         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.url}}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
