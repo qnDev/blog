@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-  background-color: white;
+  background-color: #d8d8d8;
   font: 13.34px helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
@@ -79,40 +79,44 @@ ul.posts {
 /*****************************************************************************/
 
 .site {
+  background-color: #ffffff;
   font-size: 110%;
   text-align: justify;
   width: 42em;
-  margin: 3em auto 2em auto;
+  margin: 0em auto 2em auto;
   line-height: 1.5em;
+  padding: 2em 3.5em 3em 3.5em;
 }
 
 .title {
-  color: #a00;
   font-weight: bold;
-  margin-bottom: 2em;
   background-color: #a00;
-  padding:2px;
+  width: 42em;
+  font-size: 110%;
+  margin: 3em auto 0em auto;
+  padding: 1em 3.5em 1em 3.5em;
 }
 
-  .site .title a {
-    color: #ffffff;
-    text-decoration: none;
-    /*margin-left: 0.15em;*/
-  }
+.title a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 130%;
+  /*margin-left: 0.15em;*/
+}
 
-  .site .title a:hover {
+/*  .site .title a:hover {
     color: black;
   }
+*/
+.title a.extra {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 1em;
+}
 
-  .site .title a.extra {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 1em;
-  }
-
-  .site .title a.extra:hover {
+/*  .site .title a.extra:hover {
     color: black;
-  }
+  }*/
 
   .site .meta {
     color: #aaa;
