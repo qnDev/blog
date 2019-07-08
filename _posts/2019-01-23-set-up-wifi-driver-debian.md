@@ -72,6 +72,6 @@ Di chuyển tới thư mục vừa download package firmware và mở terminal c
 ```liquid
 # dpkg -i firmware-iwlwifi_xxx.deb
 ```
-  ![Firmware](https://raw.githubusercontent.com/qndev/qndev.github.io/master/assets/images/firmware.png)
+  ![Firmware](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/firmware.png)
 
 Chú ý: đối với package manager dpkg cần cài đặt các package phụ thuộc của package firmware-iwlwifi trước.

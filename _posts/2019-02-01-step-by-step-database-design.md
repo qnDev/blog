@@ -4,7 +4,7 @@ title: "Thiết kế và tạo lập CSDL"
 comments: true
 ---
 
-<img src="{{ '/assets/images/database.jpeg'}}" alt="" height="522px" width="700px">
+![Database](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/database.jpeg)
 
 ### Quy trình thiết kế CSDL
 

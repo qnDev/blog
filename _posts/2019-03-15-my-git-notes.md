@@ -6,7 +6,7 @@ comments: true
 
 ### 1: Hệ thống quản lý phiên bản phân tán (DVCS).
 
-<img src="{{ '/assets/images/DVCS.png' | absolute_url }}" alt="DVCS">
+![DVCS](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/DVCS.png)
 
 * #### VCS (Quản lý phiên bản mã nguồn)
 
@@ -34,7 +34,7 @@ Lại còn trường hợp một số máy local cũng mất data trong cùng th
 
 * #### Trạng thái của git:
 
-  <div style="text-align:center"><img src="{{ '/assets/images/state.png' | absolute_url }}" alt="Working area, Staging area, Repisitory area."></div>
+  ![Working area, Staging area, Repisitory area](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/state.png)
 
   * #### Các trạng thái cơ của git: Modified, Staged, Commited.
 

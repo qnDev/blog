@@ -8,33 +8,33 @@ comments: true
 
 * ####  Unadjusted Use Case Weight (UUCW)
 
-![Unadjusted Use Case Weight](/assets/images/uucw.png)
+![Unadjusted Use Case Weight](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/uucw.png)
 
 * #### Unadjusted Actor Weight (UAW)
 
-![Unadjusted Actor Weight](/assets/images/uaw.png)
+![Unadjusted Actor Weight](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/uaw.png)
 
 * #### Technical Complexity Factor (TCF)
 
   #### TCF = 0.6 + (TF/100)
 
-![Technical Complexity Factor](/assets/images/tcftable.png)
+![Technical Complexity Factor](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/tcftable.png)
 
 * #### Environmental Complexity Factor (ECF)
 
   #### ECF = 1.4 + (-0.03 x EF)
 
-![Environmental Complexity Factor](/assets/images/ecftable.png)
+![Environmental Complexity Factor](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/ecftable.png)
 
   * #### Corresponding interpolation values (S) of Environmental Complexity Factor (ECF)
 
-  ![Corresponding interpolation values (S) of Environmental Complexity Factor](/assets/images/ecftable2.png)
+![Corresponding interpolation values (S) of Environmental Complexity Factor](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/ecftable2.png)
 
   * #### Experience Stability Estimate (ES)
 
   $$ES = \sum_{i=1}^8 S_i$$
 
-  ![Environmental Complexity Factor](/assets/images/es.png)
+![Environmental Complexity Factor](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/es.png)
 
 * #### Unadjusted Use Case Weight (UUCW)
 
@@ -54,29 +54,29 @@ comments: true
 
 * #### Step by step Use Case Points Methods
 
-![Use Case Points Methods](/assets/images/UseCasePointsMethod.png)
+![Use Case Points Methods](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/UseCasePointsMethod.png)
 
 * #### Review App Demo
 
   * #### Create New Project
 
-  ![Create New Project](/assets/images/project.png)
+![Create New Project](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/project.png)
 
   * #### Use Case & Actor
 
-  ![Use Case & Actor](/assets/images/usecase.png)
+![Use Case & Actor](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/usecase.png)
 
   * #### Technical Complexity Factor
 
-  ![Technical Complexity Factor](/assets/images/tcf.png)
+![Technical Complexity Factor](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/tcf.png)
 
   * #### Environmental Complexity Factor
 
-  ![Environmental Complexity Factor](/assets/images/ecf.png)
+![Environmental Complexity Factor](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/post/ecf.png)
 
   * #### Estimate Effort
 
-  ![Estimate Effort](/assets/images/effort.png)
+![Estimate Effort](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/effort.png)
 
 * #### Source code
 
