@@ -4,6 +4,14 @@ title: "Cài đặt driver Intel Wireless WiFi"
 comments: true
 ---
 
+# Table of contents
+
+- [Supported Devices](#sd)
+- [Installation](#installation)
+  - [Cài đặt thông qua terminal với tool apt-get.](#tool-apt-get)
+  - [Cài đặt thông qua các gói (package) với tool dpkg.](#tool-dpkg)
+
+<a name="sd"></a>
 
 ## Supported Devices
 
@@ -56,13 +64,19 @@ PCI: 8086:423C Intel Corporation WiMAX/WiFi Link 5150
 PCI: 8086:423D Intel Corporation WiMAX/WiFi Link 5150
 ```
 
+<a name="installation"></a>
+
 ## Installation
+
+<a name="tool-apt-get"></a>
 
 ### Cài đặt thông qua terminal với tool apt-get.
 
 ```liquid
 # apt-get update && apt-get install firmware-iwlwifi
 ```
+<a name="tool-dpkg"></a>
+
 ### Cài đặt thông qua các gói (package) với tool dpkg.
 
 Download package firmware iwlwifi tại link: https://packages.debian.org/stretch/all/firmware-iwlwifi/download.

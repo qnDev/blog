@@ -4,6 +4,17 @@ title: "VLSM - Ví dụ quy hoạch IP cho một công ty"
 comments: true
 ---
 
+# Table of contents
+
+- [Một số lưu ý](#note)
+- [Quy hoạch IP](#ip)
+  - [P01](#p01)
+  - [P02](#p02)
+  - [P03](#p03)
+  - [P04..07](#p04-07)
+
+<a name="note"></a>
+
 ### Một số lưu ý.
 
 * Cấu trúc của địa chỉ IP:
@@ -25,13 +36,19 @@ Tùy vào giải địa chỉ ip cũng như việc chia mạng con của từng 
    |B|172.16.0.0 - 172.31.0.0|255.240.0.0|172.16.0.0 - 172.31.255.255|
    |C|192.168.0.0|255.255.0.0|192.168.0.0 - 192.168.255.255|
 
+<a name="ip"></a>
+
 ### Quy hoạch IP.
 
 > Giả sử công ty ABC nào đó có 7 phòng ban: P01, P02, P03, P04, P05, P06, P07
 > với số lượng nhân viên tương ứng là: 54, 33, 18, 13, 8, 7, 3.
 > Quy hoạch địa chỉ IP cho các phòng ban trên với giải địa chỉ là: 192.168.1.0/24.
 
-Ta sẽ quy hoạch các giải địa chỉ ip cho các phòng ban có số lượng nhân viên nhiều nhất đến ít nhất.
+**Ta sẽ quy hoạch các giải địa chỉ ip cho các phòng ban có số lượng nhân viên nhiều nhất đến ít nhất.**
+
+<a name="p01"></a>
+
+#### P01
 
 P01: Để có thể cung cấp đủ 54 hosts cho phòng này cần: 6 hosts bit (2^6 - 2 = 62 hosts trên mạng con).
 Bởi vì ta có 8 host bits tất cả (192.168.1.0/24 - 24 netid bits) vì vậy cần mượn 2 bits của phần host để tạo subnets (2^2 = 4 subnets). Bốn subnets đó là:
@@ -42,9 +59,19 @@ Bởi vì ta có 8 host bits tất cả (192.168.1.0/24 - 24 netid bits) vì v�
    192.168.1.128/26
    192.168.1.192/26
 ```
-Áp dụng giải ip 192.168.1.0/26 cho P01, như vậy còn lại 3 subnets. Tiếp tục áp dụng giải ip 192.168.1.64/26 cho P02.
+Áp dụng giải ip _**192.168.1.0/26**_ cho P01, như vậy còn lại 3 subnets.
+
+<a name="p02"></a>
+
+#### P02
+
+Tiếp tục áp dụng giải ip **_192.168.1.64/26_** cho P02.
 
 Do P02 có 33 người tương ứng cần ít nhất 33 hosts cho phòng này, tương ứng với 6 hosts bit (2^6 - 2 = 62 hosts trên mạng con này). Như vậy 192.168.1.64/26 đáp ứng được yêu cầu đó. Vậy ta chọn giải ip này cho P02 và còn lại 2 giải địa chỉ ip là : 192.168.1.128/26 và 192.168.1.192/26.
+
+<a name="p03"></a>
+
+#### P03
 
 Tiếp tục P03 cần 5 hosts bit (2^5-2=30 hosts treen mạng con). Bởi vì ta có 6 host bits tất cả từ giải ip 192.168.128/26 vì vậy cần mượn 1 bit của phần của host để tạo subnets (2^1 = 2 subnets) và 2 subnets đó là:
 
@@ -52,7 +79,11 @@ Tiếp tục P03 cần 5 hosts bit (2^5-2=30 hosts treen mạng con). Bởi vì 
    192.168.1.128/27 - 255.255.255.224 (Mask)
    192.168.1.160/27 - 255.255.255.224 (Mask)
 ```
-Áp dụng giải ip 192.168.1.128/27 cho P03.
+Áp dụng giải ip _**192.168.1.128/27**_ cho P03.
+
+<a name="p04-07"></a>
+
+#### P04..07
 
 Cứ tiếp tục như vậy ta có bảng tổng kết quy hoạch giải địa chỉ ip cho tất cả các phòng ban trong bảng dưới đây.
 

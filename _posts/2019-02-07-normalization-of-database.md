@@ -4,12 +4,27 @@ title: "Dạng chuẩn NF trong Database"
 comments: true
 ---
 
+# Table of contents
+
+- [Chuẩn hóa](#chuanhoa)
+  - [Dạng chuẩn 1 (1NF)](#nf1)
+  - [Dạng chuẩn 2 (2NF)](#nf2)
+  - [Dạng chuẩn 3 (3NF)](#nf3)
+- [Các quy tắc xây dựng CSDL chuẩn hóa](#quytac)
+  - [Quy tắc 1- Loại bỏ các nhóm dữ liệu lặp lại](#quytac1)
+  - [Quy tắc 2- Loại bỏ dữ liệu dư thừa](#quytac2)
+  - [Quy tắc 3 – Loại bỏ các trường không phụ thuộc vào khóa chính](#quytac3)
+- [References](#references)
+
+<a name="chuanhoa"></a>
 
 ### Chuẩn hóa
 
 Chuẩn hóa là một kỹ thuật giúp người thiết kế nhóm các dữ liệu và đặt chúng trong các bảng phù
 hợp. Do vậy việc chuẩn hóa một CSDL là hết sức quan trọng trước khi ta bắt đầu làm việc với
 nó. Các dạng chuẩn có những quy tắc chỉ rõ các yêu cầu tạo một CSDL quan hệ.
+
+<a name="nf1"></a>
 
 ##### Dạng chuẩn 1 (1NF):
 * Bảng dữ liệu thỏa mãn các đặc tính của một quan hệ (relation) được coi là ở dạng chuẩn 1. Một
@@ -18,6 +33,8 @@ chuẩn 1.
 
 > Một quan hệ được coi là ở dạng chuẩn 1 khi và chỉ khi các miền giá trị của quan hệ chứa
 > các giá trị đơn nhất.
+
+<a name="nf2"></a>
 
 ##### Dạng chuẩn 2 (2NF):
 * Điều kiện để đạt được dạng chuẩn 2 là bả ng dữ liệu phải ở dạng chuẩn 1. Mục đích của dạng
@@ -32,6 +49,8 @@ attribute của quan hệ. Tất cả các thuộc tính khác được gọi l�
 
 Dạng chuẩn 2 quy định rằng tất cả các thuộc tính không phải thành phần của khóa ứng viên phải
 phụ thuộc hoàn toàn vào khóa ứng viên.
+
+<a name="nf3"></a>
 
 ##### Dạng chuẩn 3 (3NF):
 * Mặc dù dạng chuẩn 2 đã loại bỏ được các bất thường có thể xuất hiện trong các bảng chưa ở
@@ -53,7 +72,11 @@ thuộc vào trường khóa theo quan hệ ngoại suy điều đó có ý ngh�
 không chỉ trường khóa mà còn mô tả thuộc tính không phải khóa. Do đó thông tin không phụ
 thuộc trực tiếp vào khóa chính mặc dù rõ ràng thuộc tính này có quan hệ với khóa chính.
 
+<a name="quytac"></a>
+
 ### Các quy tắc xây dựng CSDL chuẩn hóa
+
+<a name="quytac1"></a>
 
 ##### Quy tắc 1- Loại bỏ các nhóm dữ liệu lặp lại
 
@@ -101,6 +124,8 @@ nằm trong bảng Orders hay không.
 |                                  | Required date                    |
 
 
+<a name="quytac2"></a>
+
 ##### Quy tắc 2- Loại bỏ dữ liệu dư thừa
 
 Nếu một trường chỉ phụ thuộc vào một phần của trường khóa chính chứa nhiều giá trị, đưa dữ
@@ -143,6 +168,7 @@ khách hàng.
 |                                  | Quantity                         |
 |                                  | Discount                         |
 
+<a name="quytac3"></a>
 
 ##### Quy tắc 3 – Loại bỏ các trường không phụ thuộc vào khóa chính
 
@@ -176,6 +202,8 @@ Order ID.
 |                                  | Shippeddate                      |                                  | Shippeddate                      |
 |                                  |                                  |                                  | Quantity                         |
 |                                  |                                  |                                  | Discount                         |
+
+<a name="references"></a>
 
 ### References
 

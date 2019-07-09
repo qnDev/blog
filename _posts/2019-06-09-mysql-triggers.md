@@ -4,13 +4,30 @@ title: "MySQL triggers"
 comments: true
 ---
 
-#### Các bảng trong CSDL
+# Table of contents
+
+- [Các bảng trong CSDL](#tables)
+  - [Bảng Student](#student)
+  - [Bảng Subject](#subject)
+  - [Bảng Class](#class)
+  - [Bảng Register](#register)
+- [Triggers examples](#triggers)
+  - [BEFORE_INSERT](#before-insert)
+  - [AFTER_DELETE](#after-delete)
+  - [BEFORE_DELETE_REGISTER](#before-delete-register)
+  - [AFTER_INSERT_REGISTER](#after-insert-register)
+
+<a name="tables"></a>
+
+# Các bảng trong CSDL
 
 > Để có thể thực hành với triggers 
 > trong sql ta tạo các bảng trong cơ sở dữ liệu
 > với cấu trúc các cột và kiểu dữ liệu dưới đây.
 
-Bảng **Student**
+<a name="student"></a>
+
+## Bảng **Student**
 
 ```sql
 CREATE TABLE `student` (
@@ -29,7 +46,9 @@ CREATE TABLE `student` (
 );
 ```
 
-Bảng **Subject**
+<a name="subject"></a>
+
+## Bảng **Subject**
 
 ```sql
 CREATE TABLE `subject` (
@@ -43,7 +62,9 @@ CREATE TABLE `subject` (
 );
 ```
 
-Bảng **Class**
+<a name="class"></a>
+
+## Bảng **Class**
 
 ```sql
 CREATE TABLE `class` (
@@ -65,7 +86,9 @@ CREATE TABLE `class` (
 );
 ```
 
-Bảng **Register**
+<a name="register"></a>
+
+## Bảng **Register**
 
 ```sql
 CREATE TABLE `register` (
@@ -77,9 +100,15 @@ CREATE TABLE `register` (
 );
 ```
 
-#### Triggers examples
+<a name="triggers"></a>
 
-**BEFORE_INSERT** - Nếu thời gian đăng kí lớp đã hết sinh viên sẽ không đăng kí được lớp nữa, hoặc trong thời gian đăng kí mà số lượng sinh viên iuar lớp đó đã đầy, hoặc sinh viên đăng kí mã lớp không tông tại hoặc đã đăng kí rồi.
+# Triggers examples
+
+<a name="before-insert"></a>
+
+## BEFORE_INSERT 
+
+Nếu thời gian đăng kí lớp đã hết sinh viên sẽ không đăng kí được lớp nữa, hoặc trong thời gian đăng kí mà số lượng sinh viên iuar lớp đó đã đầy, hoặc sinh viên đăng kí mã lớp không tông tại hoặc đã đăng kí rồi.
 
 ```sql
 BEGIN
@@ -111,7 +140,11 @@ END
 
 ```
 
-**AFTER_DELETE** - Sau khi một sinh viên xóa lớp học đã đăng kí thì số lượng sinh viên đăng kí lớp học đó sẽ giảm đi 1 (trong bảng class).
+<a name="after-delete"></a>
+
+## AFTER_DELETE
+
+Sau khi một sinh viên xóa lớp học đã đăng kí thì số lượng sinh viên đăng kí lớp học đó sẽ giảm đi 1 (trong bảng class).
 
 ```sql
 BEGIN
@@ -121,7 +154,11 @@ END
 
 ```
 
-**BEFORE_DELETE_REGISTER** - Nếu hết thời gian đăng kí lớp học thì sinh viên sẽ không được quyền xóa đăng kí lớp học nữa.
+<a name="before-delete-register"></a>
+
+## BEFORE_DELETE_REGISTER
+
+Nếu hết thời gian đăng kí lớp học thì sinh viên sẽ không được quyền xóa đăng kí lớp học nữa.
 
 ```sql
 BEGIN
@@ -135,7 +172,11 @@ BEGIN
 END
 ```
 
-**AFTER_INSERT_REGISTER** - Kiểm tra nếu sinh viên đăng kí quá 24 tín chỉ thì sẽ không được đăng kí thêm lớp học nữa, hoặc nếu chưa vượt quá số tín chỉ quy định nhưng lớp vừa đăng kí đã trùng thời gianơi học với lớp đã đăng kí rồi.
+<a name="after-insert-register"></a>
+
+## AFTER_INSERT_REGISTER
+
+Kiểm tra nếu sinh viên đăng kí quá 24 tín chỉ thì sẽ không được đăng kí thêm lớp học nữa, hoặc nếu chưa vượt quá số tín chỉ quy định nhưng lớp vừa đăng kí đã trùng thời gianơi học với lớp đã đăng kí rồi.
 
 ```sql
 BEGIN

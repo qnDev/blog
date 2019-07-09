@@ -4,6 +4,14 @@ title: "My git notes"
 comments: true
 ---
 
+# Table of contents
+
+- [Hệ thống quản lý phiên bản phân tán (DVCS)](#DVCS)
+- [Thông tin cơ bản về hệ thống](#base)
+- [Cài đặt git](#setup)
+
+<a name="DVCS"></a>
+
 ### 1: Hệ thống quản lý phiên bản phân tán (DVCS).
 
 ![DVCS](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/DVCS.png)
@@ -26,6 +34,8 @@ Câu hỏi đặt ra về vấn đề máy chủ trong hệ thống gặp vấn 
 
 Lại còn trường hợp một số máy local cũng mất data trong cùng thời điểm với server thì việc backup lại data trên server có được không và nếu được thì data có toàn vẹn.
 
+<a name="base"></a>
+
 ### 2: Thông tin cơ bản về hệ thống.
 
 * #### Snapshot: Tiếng việt được dịch ra đó là – bức ảnh – lưu lại một khoảnh khắc tại một thời gian xác định.
@@ -45,6 +55,8 @@ Lại còn trường hợp một số máy local cũng mất data trong cùng th
   * #### Repository area (khu vực git): commited →unmodified
 
 Các trạng thái này chúng ta sẽ tìm hiểu sâu hơn ở các phần tiếp theo đó là File Status LifeCyle.
+
+<a name="setup"></a>
 
 ### 3: Cài đặt git.
 

@@ -4,6 +4,22 @@ title: "Markdown syntax"
 comments: true
 ---
 
+# Table of contents
+
+- [HEADERS](#headers)
+- [LISTS](#lists)
+  - [Unordered](#unordered)
+  - [Ordered](#ordered)
+- [IMAGES](#images)
+- [EMPHASIS](#emphasis)
+- [LINKS](#links)
+- [Blockquotes](#blockquotes)
+- [Syntax highlighting](#highlighting)
+- [Task Lists](#task-lists)
+- [EMOJI](#emoiji)
+
+<a name="headers"></a>
+
 # HEADERS
 ```
 # This is an h1 tag
@@ -14,7 +30,12 @@ comments: true
 ## This is an h2 tag
 ###### This is an h6 tag
 
+<a name="lists"></a>
+
 # LISTS
+
+<a name="unordered"></a>
+
 ## Unordered
 ```
 * Item 1
@@ -26,6 +47,8 @@ comments: true
 * Item 2
   * Item 2a
   * Item 2b
+
+<a name="ordered"></a>
 
 ## Ordered
 ```
@@ -41,6 +64,8 @@ comments: true
    * Item 3a
    * Item 3b
 
+<a name="images"></a>
+
 # IMAGES
 ```
 ![Screenshot home page](/images/screenshot-homepage.png)
@@ -48,6 +73,8 @@ Format: ![Alt Text](url)
 ```
 
 ![Screenshot home page](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/screenshot.png)
+
+<a name="emphasis"></a>
 
 # EMPHASIS
 ```
@@ -68,6 +95,8 @@ __This will also be bold__
 
 _You **can** combine them_
 
+<a name="links"></a>
+
 # LINKS
 ```
 http://github.com - automatic!
@@ -75,6 +104,8 @@ http://github.com - automatic!
 ```
 http://github.com - automatic!
 [GitHub](http://github.com)
+
+<a name="blockquotes"></a>
 
 # Blockquotes
 ```
@@ -88,12 +119,16 @@ As Grace Hopper said:
 > I’ve always been more interested
 > in the future than in the past.
 
+<a name="highlighting"></a>
+
 # Syntax highlighting
 ```javascript
 function test() {
 console.log("look ma’, no spaces");
 }
 ```
+
+<a name="task-lists"></a>
 
 # Task Lists
 ```
@@ -106,6 +141,8 @@ console.log("look ma’, no spaces");
 - [ ] this is an incomplete item
 - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
 - [x] list syntax required (any unordered or ordered list supported)
+
+<a name="emoiji"></a>
 
 # EMOJI
 ```

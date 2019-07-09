@@ -4,6 +4,22 @@ title: "My Ruby notes"
 comments: true
 ---
 
+# Table of contents
+
+- [Comments trong Ruby](#comment)
+- [Khai báo trong Ruby](#define)
+- [Keywords](#keywords)
+- [Khoảng trắng và tab](#space-tab)
+- [Cấu trúc block](#block)
+- [Thực thi chương trình](#thucthi)
+- [Các kiểu dữ liệu và đối tượng trong Ruby](#object)
+  - [Number](#number)
+  - [Text](#text)
+  - [String Operators](#string-operations)
+  - [Truy cập các kí tự và chuỗi con](#access)
+
+<a name="comment"></a>
+
 ### Comments trong Ruby
 
 Comments có hai cách là từng dòng hoặc nhiều dòng:
@@ -24,15 +40,21 @@ Như ta thấy comments được viết au kí tự “#”.
 =end
 ```
 
+<a name="define"></a>
+
 ### Khai báo trong Ruby
 
 Ruby sử dụng các chữ các, số, dấu gạch dưới để khái báo các biến, phương thức, lớp, … nhưng không được bắt đầu bằng chữ số hoặc trùng lặp với các keyword và cũng có thể bắt đầu bằng kí tự gạch dưới. Ruby cũng phân biệt chữ hoa với chữ thường.
 
 Ngoài ra còn một số điều khá thú vị nữa đó là: Ruby sử dụng dấu câu trong định danh như: ?, !
 
+<a name="keywords"></a>
+
 ### Keywords
 
  class do def if end begin next nil,… chúng ta cần tránh khai báo các hàm biến class trùng lặp với những từ khóa này.
+
+<a name="space-tab"></a>
 
 ### Khoảng trắng và tab
 
@@ -43,6 +65,8 @@ Ví dụ: Hai câu lệnh dưới đây được Ruby hiểu theo nghĩa giống
 puts 8 + 5
 puts 8+5
 ```
+
+<a name="block"></a>
 
 ###  Cấu trúc block
 
@@ -64,11 +88,17 @@ Ví dụ: In các số từ 1 tới 10.
 end
 ```
 
+<a name="thucthi"></a>
+
 ### Thực thi chương trình
 
 Không như các ngôn ngữ khác như C hay Java Ruby là scripting language se không có chương trình hay phương thức main là ghi thực thi chương trình nó sẽ khởi chạy đầu tiên. Trong Ruby nó sẽ thực thi từ những dòng đầu tiên của file mã nguồn được chỉ định.
 
+<a name="object"></a>
+
 ### Các kiểu dữ liệu và đối tượng trong Ruby
+
+<a name="number"></a>
 
 #### Number
 
@@ -90,11 +120,15 @@ x**¼ => # x mũ (một phần tư), nhưng ¼ là chia số nguyên kết quả
 x**1.0/4.0 => # căn bậc bốn của x
 ```
 
+<a name="text"></a>
+
 #### Text
 
 Text là đối tượng của lớp String.
 Class String cung cấp một loạt các phương thức như: tìm kiếm, chèn, xóa, lấy chuỗi con, ghép các chuỗi với nhau,…
 Chuỗi kí tự dễ dàng nhận thấy nhất đó là bên trong dấu nháy đơn hoặc nháy kép.
+
+<a name="string-operations"></a>
 
 #### String Operators
 
@@ -125,6 +159,8 @@ Chuỗi kí tự dễ dàng nhận thấy nhất đó là bên trong dấu nháy
 # - Sử dụng toán tử: “*” lặp lại các các kí tự phía bên trái “*” với số lần 
 # bằng số bên phải kí tự “*” ( planet = “Sun*”*3 ) => kết quả: “Sun*Sun*Sun*”.
 ```
+
+<a name="access"></a>
 
 #### Truy cập các kí tự và chuỗi con
 

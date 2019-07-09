@@ -4,13 +4,32 @@ title: "Git Large File Storage"
 comments: true
 ---
 
+# Table of contents
+
+- [Bắt đầu với LFS](#start)
+  - [Yêu cầu](#require)
+  - [Cài đặt](#setup)
+    - [Debian](#debian-os)
+    - [Mac OSX](#macosx)
+    - [Ubuntu](#ubuntu-os)
+    - [Windows](#win)
+- [Sử dụng Git LFS](#using)
+
+<a name="start"></a>
+
 ## Bắt đầu với LFS ##
+
+<a name="require"></a>
 
 ### Yêu cầu ###
 
 #### `git >= 1.8.2` ####
 
+<a name="setup"></a>
+
 ### Cài đặt ###
+
+<a name="debian-os"></a>
 
 #### Debian ###
 
@@ -59,6 +78,8 @@ $ sudo apt-get install git-lfs
 $ git lfs install
 ```
 
+<a name="macosx"></a>
+
 #### Mac OSX ###
 
 ```bash
@@ -66,6 +87,8 @@ $ brew update
 $ brew install git-lfs
 $ git lfs install
 ```
+
+<a name="ubuntu-os"></a>
 
 #### Ubuntu ###
 
@@ -75,6 +98,8 @@ $ git lfs install
 
 **```$ git lfs install```**
 
+<a name="win"></a>
+
 #### Windows ###
 
 Download [Windows installer](https://github.com/git-lfs/git-lfs/releases)
@@ -82,6 +107,8 @@ Download [Windows installer](https://github.com/git-lfs/git-lfs/releases)
 Chạy Windows installer vừa download về
 
 Mở command prompt và chạy _`git lfs install`_
+
+<a name="using"></a>
 
 ## Sử dụng Git LFS ##
 

@@ -4,13 +4,36 @@ title: "Công cụ quản lý gói trong Debian"
 comments: true
 ---
 
+# Table of contents
+
+- [Package management tools](#pmt)
+   - [Main tools](#mt)
+   - [Apt](#apt)
+      - [Update](#update)
+      - [Search](#search)
+      - [Show](#show)
+      - [Xử lý gói](#xulygoi)
+      - [Autoremove](#autoremove)
+      - [Upgrade](#upgrade)
+   - [dpkg](#dpkg)
+   - [apt-get](#apt-get)
+   - [Synaptic](#synaptic)
+   - [References](#references)
+
+<a name="pmt"></a>
+
 ## Package management tools
+
+<a name="mt"></a>
+
 ### Main tools
 
 - [Apt](#apt) - công cụ quản lý gói chính.
 - [dpkg](#dpkg) - công cụ cài đặt tệp Debian.
 - [apt-get](#apt-get) - công cụ xử lý gói APT - giao diện dòng lệnh.
 - [Synaptic ](#synaptic ) - công cụ quản lý gói thông qua giao diện đồ hoạ.
+
+<a name="apt"></a>
 
 ### Apt
 - APT ( Advanced Package Tool) là một bộ công cụ để quản lý các gói Debian.
@@ -21,12 +44,16 @@ comments: true
 
 - apt có nhiều lợi thế hơn các công cụ quản lý gói khác có sẵn trong Debian dành cho quản trị viên máy chủ. Một số ưu điểm này bao gồm dễ sử dụng so với các kết nối đầu cuối đơn giản (SSH) và khả năng được sử dụng trong các tập lệnh quản trị hệ thống, do đó có thể được tự động hóa bởi tiện ích lập lịch cron. Một số trường hợp sử dụng apt là:
 
+<a name="update"></a>
+
 #### Update
 - Để tải xuống, cập nhật thông tin gói từ tất cả các nguồn được cấu hình, thực hiện nâng cấp gói hoặc tìm kiếm và hiển thị chi tiết về tất cả các gói có sẵn để cài đặt.
 
 ```bash
 $ sudo apt update
 ```
+<a name="search"></a>
+
 #### Search
 - Các gói có thể được tìm kiếm thông qua:
 
@@ -35,6 +62,8 @@ $ apt search <packagename>
 ```
 
 ![Apt search](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/apt_search.png)
+
+<a name="show"></a>
 
 #### Show
 - Hiển thị thông tin về gói bao gồm các gói phụ thuộc, kích thước cài đặt và tải xuống, nguồn của gói, mô tả nội dung gói, v.v. Sẽ hữu ích để xem thông tin này trước khi cho phép apt xóa gói hoặc trong khi tìm kiếm gói mới để cài đặt.
@@ -45,6 +74,8 @@ $ apt show <packagename>
 
 ![Apt show](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/apt-show.png)
 
+<a name="xulygoi"></a>
+
 #### Xử lý gói
 - Thêm - cài đặt, xóa gói:
 
@@ -54,6 +85,8 @@ $ sudo apt remove apt
 $ sudo apt install </path/to/deb/file/debfile.deb>
 ```
 
+<a name="autoremove"></a>
+
 #### Autoremove
 - autoremove được sử dụng để loại bỏ các gói được cài đặt tự động để đáp ứng các phụ thuộc cho các gói khác và hiện không còn cần thiết vì các phụ thuộc đã thay đổi hoặc (các) gói cần chúng đã bị xóa trong thời gian đó.
 
@@ -61,12 +94,16 @@ $ sudo apt install </path/to/deb/file/debfile.deb>
 $ sudo apt autoremove
 ```
 
+<a name="upgrade"></a>
+
 #### Upgrade
 - updrade được sử dụng để cài đặt các bản nâng cấp có sẵn của tất cả các gói hiện được cài đặt trên hệ thống từ các nguồn được định cấu hình qua sources.list. Các gói mới sẽ được cài đặt nếu được yêu cầu để đáp ứng các phụ thuộc, nhưng các gói hiện tại sẽ không bao giờ bị xóa. Nếu việc nâng cấp cho gói yêu cầu loại bỏ gói đã cài đặt thì việc nâng cấp cho gói này không được thực hiện.
 
 ```bash
 $ sudo apt upgrade
 ```
+
+<a name="dpkg"></a>
 
 ### dpkg
 
@@ -77,6 +114,8 @@ Bản thân dpkg được điều khiển hoàn toàn thông qua các tham số 
 ```bash
 $ sudo dpkg -i <--install> <package-file>
 ```
+
+<a name="apt-get"></a>
 
 ### apt-get
 
@@ -89,11 +128,15 @@ Cài đặt một hoặc nhiều package, mỗi package tượng ứng với tê
 
 Tệp /etc/apt/source.list được sử dụng để định vị các gói mong muốn.
 
+<a name="synaptic"></a>
+
 ### Synaptic
 
 Synaptic được cài đặt theo mặc định trong Debian. Đây là công cụ với giao diện đồ hoạ, dễ dàng sử dụng đối với người dùng cuối.
 
 ![Synaptic](https://raw.githubusercontent.com/qndev/blog/gh-pages/images/posts/synaptic_02.png)
+
+<a name="references"></a>
 
 ### References
 
