@@ -39,3 +39,5 @@ plugins:
   - jekyll-paginate
   - jekyll-paginate
   - jemoji
+  - kramdown
+  - jekyll-gist

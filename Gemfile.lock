@@ -248,9 +248,11 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-gist
   jekyll-octicons
   jekyll-paginate
   jemoji
+  kramdown
 
 BUNDLED WITH
    1.17.3
